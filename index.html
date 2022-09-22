@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quote Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                background-color: rgb(158, 235, 248);
+            }
+            main{
+                width: 30%;
+                min-width: 300px;
+                background-color: white;
+                margin: auto auto;
+                align-items: center;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .result{
+                margin: 20px 40px 40px 40px;
+                height: 40vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: visible;
+            }
+            
+            button{
+                width: 100%;
+                border: 0px;
+                /* margin: 0 auto; */
+                text-align: center;
+                /* border-radius: 10px; */
+                padding: 20px 0;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color:rgb(106, 166, 245);
+                color: whitesmoke;
+                transition: 1s;
+            }
+            button:hover{
+                background-color: rgb(79, 131, 199);
+                transition: 1s;
+            }
+            .result>div{
+                margin: 10px 0px;
+                text-align: center;
+                font-family: 'Dancing Script', cursive;
+                font-size: 30px;
+                line-height: 1em;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+            }
+            .quotesymbol{
+                overflow: visible;
+                height: 0px;
+                font-size: 60px;
+                color: rgb(196, 196, 196);
+                padding-left: 20%;
+            }
+            .twittersymbol{
+                height: 40px;
+            }
+            .twittersymbol>.fa-twitter{
+                /* display: inline-block; */
+                font-size: 40px;
+                color: rgb(106, 166, 245);
+                float: right;
+                margin: 5px 5px 0px 0px;
+                transition: 1s;
+            }
+            .twittersymbol>.fa-twitter:hover{
+                color: rgb(79, 131, 199);
+                transition: 1s;
+            }
+            
+        </style>
+
+        <script src="https://kit.fontawesome.com/bd0b7c6b8a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="twittersymbol">
+                <i id="tweet" class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="quotesymbol">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="result">
+                <div>
+                    <p id="quote" style="margin-bottom: 15px;"></p>
+                    <p id="author" style="color: rgb(80, 80, 80);"></p>
+                </div>
+            </div>
+            <button name="newquote" id="newquote">New Quote</button>
+        </main>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
